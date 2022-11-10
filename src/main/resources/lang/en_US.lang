@@ -1443,3 +1443,16 @@ item.ammo.arrow.purple.name=Purple Arrow
 item.ammo.arrow.purple.desc=How did you get this?!
 item.label.name=Label
 item.label.desc=Allows you to name items and creatures. Can be dyed.
+
+item.arrows.ammo.egg.name=Egg Arrow
+item.arrows.ammo.egg.desc=An... egg tipped arrow?
+item.arrows.ammo.explosive.name=Explosive Arrow
+item.arrows.ammo.explosive.desc=A gunpowder tipped arrow that explodes.
+item.arrows.ammo.fire.name=Fire Arrow
+item.arrows.ammo.fire.desc=A coal tipped arrow that lights stuff on fire.
+item.arrows.ammo.ice.name=Ice Arrow
+item.arrows.ammo.ice.desc=A snow tipped arrow that freezes water. Brr!
+item.arrows.ammo.lightning.name=Lightning Arrow
+item.arrows.ammo.lightning.desc=A diamond tipped arrow that casts lightning from the sky.
+item.arrows.bow.homing.name=Homing Bow
+item.arrows.bow.homing.desc=An upgraded weapon for firing seeking arrows.

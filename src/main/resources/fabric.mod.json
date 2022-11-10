@@ -1,16 +1,17 @@
 {
   "schemaVersion": 1,
-  "id": "examplemod",
+  "id": "arrows",
   "version": "${version}",
 
-  "name": "Example Mod",
-  "description": "This mod aims to help new BTA modders.",
+  "name": "Elemental Arrows",
+  "description": "The Elemental Arrows mod adds five new types of arrows to your game!",
   "authors": [
-    "Turnip Labs"
+    "Turnip Labs",
+    "Risugami"
   ],
   "contact": {
-    "homepage": "",
-    "sources": ""
+    "homepage": "https://github.com/Turnip-Labs",
+    "sources": "https://github.com/Turnip-Labs/elemental-arrows"
   },
 
   "license": "CC0-1.0",
@@ -18,11 +19,11 @@
   "environment": "*",
   "entrypoints": {
     "main": [
-        "turniplabs.examplemod.ExampleMod"
+      "turniplabs.arrows.Mod_Arrows"
     ]
   },
   "mixins": [
-      "examplemod.mixins.json"
+    "arrows.mixins.json"
   ],
 
   "depends": {
