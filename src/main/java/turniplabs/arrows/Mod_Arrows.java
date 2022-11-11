@@ -37,7 +37,7 @@ public class Mod_Arrows implements ModInitializer {
         TextureHelper.addTextureToItems(MOD_ID,"icearrow.png",19,0);
         TextureHelper.addTextureToItems(MOD_ID,"liarrow.png",20,0);
         TextureHelper.addTextureToItems(MOD_ID,"hombow.png",21,0);
-        
+
         RecipeHelper.Crafting.createRecipe(arrowEgg,4, new Object[]{"1", "2", "3", '1', eggChicken, '2', stick, '3', featherChicken});
         RecipeHelper.Crafting.createRecipe(arrowExplosive,4, new Object[]{"1", "2", "3", '1', sulphur, '2', stick, '3', featherChicken});
         RecipeHelper.Crafting.createRecipe(arrowFire,4, new Object[]{"1", "2", "3", '1', coal, '2', stick, '3', featherChicken});
