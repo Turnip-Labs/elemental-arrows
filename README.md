@@ -1,32 +1,14 @@
-# BTA Babric Minimal Mod
+# BTA Elemental Arrows
 
-Babric example mod, but without the examples.
+A port of Rigusami's Elemental Arrows!
 
-## Prerequisites
-- JDK for Java 17 ([Eclipse Temurin](https://adoptium.net/temurin/releases/) recommended)
-- IntelliJ IDEA
-- Minecraft Development plugin (Optional, but highly recommended)
+## Installation
 
-## Setup steps
+Install the BTA Babric instance from https://drive.google.com/file/d/108AHaJpdNzuS4zb-XsqobaVkNALPpdRA/view?usp=sharing
 
-1. Download or clone this repository and put it somewhere.
-```
-git clone https://github.com/Turnip-Labs/bta-minimal-mod.git
-```
+Then install the Elemental Arrows .jar file into the "mods" tab!
 
-2. Import the project in IntelliJ IDEA, close it and open it again.
+## Notes
 
-
-3. Create a new run configuration by going in `Run > Edit Configurations`  
-   Then click on the plus icon and select Gradle. In the `Tasks and Arguments` field enter `build`  
-   Running it will build your finished jar files and put them in `build/libs/`
-
-
-4. Open `File > Settings` and head to `Build, Execution, Development > Build Tools > Gradle`  
-   Change `Build and run using` and `Run tests using` to `IntelliJ IDEA`
-
-
-5. Open `File > Project Structure`, select `Project` and set `Compiler output` to your project's path.
-
-
-6. Done! Now all that's left is to change every mention of `examplemod` to your own mod id. Happy modding!
+The placement of fire and ice is a bit jank right now.
+The Homing Bow doesn't currently home in on anything.
