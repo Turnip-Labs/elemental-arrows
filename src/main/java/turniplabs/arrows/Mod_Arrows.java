@@ -4,6 +4,7 @@ import net.fabricmc.api.ModInitializer;
 import net.minecraft.src.Item;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+import turniplabs.arrows.item.ItemBowHoming;
 import turniplabs.halplibe.helper.RecipeHelper;
 import turniplabs.halplibe.helper.TextureHelper;
 
@@ -24,6 +25,7 @@ public class Mod_Arrows implements ModInitializer {
     public static final Item arrowFire = new Item(802).setIconCoord(18,0).setItemName(name("ammo.fire"));
     public static final Item arrowIce = new Item(803).setIconCoord(19,0).setItemName(name("ammo.ice"));
     public static final Item arrowLightning = new Item(804).setIconCoord(20,0).setItemName(name("ammo.lightning"));
+    public static final Item bowHoming = new ItemBowHoming(805).setIconCoord(21,0).setItemName(name("bow.homing"));
 
     @Override
     public void onInitialize() {
@@ -36,10 +38,11 @@ public class Mod_Arrows implements ModInitializer {
         TextureHelper.addTextureToItems(MOD_ID,"liarrow.png",20,0);
         TextureHelper.addTextureToItems(MOD_ID,"hombow.png",21,0);
 
-        RecipeHelper.Crafting.createRecipe(arrowEgg,4, new Object[]{"1", "2", "3", '1', eggChicken, '2', stick, '3', featherChicken});
-        RecipeHelper.Crafting.createRecipe(arrowExplosive,4, new Object[]{"1", "2", "3", '1', sulphur, '2', stick, '3', featherChicken});
+        RecipeHelper.Crafting.createRecipe(arrowEgg,1, new Object[]{"1", "2", "3", '1', eggChicken, '2', stick, '3', featherChicken});
+        RecipeHelper.Crafting.createRecipe(arrowExplosive,1, new Object[]{"1", "2", "3", '1', sulphur, '2', stick, '3', featherChicken});
         RecipeHelper.Crafting.createRecipe(arrowFire,4, new Object[]{"1", "2", "3", '1', coal, '2', stick, '3', featherChicken});
         RecipeHelper.Crafting.createRecipe(arrowIce,4, new Object[]{"1", "2", "3", '1', ammoSnowball, '2', stick, '3', featherChicken});
-        RecipeHelper.Crafting.createRecipe(arrowLightning,4, new Object[]{"1", "2", "3", '1', diamond, '2', stick, '3', featherChicken});
+        RecipeHelper.Crafting.createRecipe(arrowLightning,1, new Object[]{"1", "2", "3", '1', diamond, '2', stick, '3', featherChicken});
+        RecipeHelper.Crafting.createRecipe(bowHoming, 1, new Object[]{" 12", "132", " 12", '1', diamond, '2', string, '3', toolBow});
     }
 }
