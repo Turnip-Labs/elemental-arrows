@@ -11,4 +11,5 @@ Then install the Elemental Arrows .jar file into the "mods" tab!
 ## Notes
 
 The placement of fire and ice is a bit jank right now.
-The Homing Bow is currently gone due to related crashes.
+
+The Homing Bow does not currently home in on entities.
