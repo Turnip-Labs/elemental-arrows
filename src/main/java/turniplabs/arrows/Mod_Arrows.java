@@ -20,29 +20,29 @@ public class Mod_Arrows implements ModInitializer {
         return Mod_Arrows.MOD_ID + "." + name;
     }
 
-    public static final Item arrowEgg = new Item(800).setIconCoord(16,0).setItemName(name("ammo.egg"));
-    public static final Item arrowExplosive = new Item(801).setIconCoord(17,0).setItemName(name("ammo.explosive"));
-    public static final Item arrowFire = new Item(802).setIconCoord(18,0).setItemName(name("ammo.fire"));
-    public static final Item arrowIce = new Item(803).setIconCoord(19,0).setItemName(name("ammo.ice"));
-    public static final Item arrowLightning = new Item(804).setIconCoord(20,0).setItemName(name("ammo.lightning"));
-    public static final Item bowHoming = new ItemBowHoming(805).setIconCoord(21,0).setItemName(name("bow.homing"));
+    public static final Item arrowEgg = new Item(800).setIconCoord(0,31).setItemName(name("ammo.egg"));
+    public static final Item arrowExplosive = new Item(801).setIconCoord(1,31).setItemName(name("ammo.explosive"));
+    public static final Item arrowFire = new Item(802).setIconCoord(2,31).setItemName(name("ammo.fire"));
+    public static final Item arrowIce = new Item(803).setIconCoord(3,31).setItemName(name("ammo.ice"));
+    public static final Item arrowLightning = new Item(804).setIconCoord(4,31).setItemName(name("ammo.lightning"));
+    public static final Item bowHoming = new ItemBowHoming(805).setIconCoord(5,31).setItemName(name("bow.homing"));
 
     @Override
     public void onInitialize() {
         LOGGER.info("Elemental Arrows initialized.");
 
-        TextureHelper.addTextureToItems(MOD_ID,"eggarrow.png",16,0);
-        TextureHelper.addTextureToItems(MOD_ID,"exarrow.png",17,0);
-        TextureHelper.addTextureToItems(MOD_ID,"fiarrow.png",18,0);
-        TextureHelper.addTextureToItems(MOD_ID,"icearrow.png",19,0);
-        TextureHelper.addTextureToItems(MOD_ID,"liarrow.png",20,0);
-        TextureHelper.addTextureToItems(MOD_ID,"hombow.png",21,0);
+        TextureHelper.addTextureToItems(MOD_ID,"eggarrow.png",0,31);
+        TextureHelper.addTextureToItems(MOD_ID,"exarrow.png",1,31);
+        TextureHelper.addTextureToItems(MOD_ID,"fiarrow.png",2,31);
+        TextureHelper.addTextureToItems(MOD_ID,"icearrow.png",3,31);
+        TextureHelper.addTextureToItems(MOD_ID,"liarrow.png",4,31);
+        TextureHelper.addTextureToItems(MOD_ID,"hombow.png",5,31);
 
         RecipeHelper.Crafting.createRecipe(arrowEgg,1, new Object[]{"1", "2", "3", '1', eggChicken, '2', stick, '3', featherChicken});
         RecipeHelper.Crafting.createRecipe(arrowExplosive,1, new Object[]{"1", "2", "3", '1', sulphur, '2', stick, '3', featherChicken});
-        RecipeHelper.Crafting.createRecipe(arrowFire,4, new Object[]{"1", "2", "3", '1', coal, '2', stick, '3', featherChicken});
-        RecipeHelper.Crafting.createRecipe(arrowIce,4, new Object[]{"1", "2", "3", '1', ammoSnowball, '2', stick, '3', featherChicken});
+        RecipeHelper.Crafting.createRecipe(arrowFire,1, new Object[]{"1", "2", "3", '1', coal, '2', stick, '3', featherChicken});
+        RecipeHelper.Crafting.createRecipe(arrowIce,1, new Object[]{"1", "2", "3", '1', ammoSnowball, '2', stick, '3', featherChicken});
         RecipeHelper.Crafting.createRecipe(arrowLightning,1, new Object[]{"1", "2", "3", '1', diamond, '2', stick, '3', featherChicken});
-        RecipeHelper.Crafting.createRecipe(bowHoming, 1, new Object[]{" 12", "132", " 12", '1', diamond, '2', string, '3', toolBow});
+        RecipeHelper.Crafting.createRecipe(bowHoming, 1, new Object[]{" 1 ", "1 2", " 12", '1', diamond, '2', string});
     }
 }

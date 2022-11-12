@@ -6,16 +6,14 @@ import net.minecraft.src.EntityLiving;
 import net.minecraft.src.World;
 
 public class EntityArrowEgg extends EntityArrow {
-    public boolean homing;
 
     public EntityArrowEgg(World world, EntityLiving entityliving, boolean doesArrowBelongToPlayer, int arrowType) {
         super(world, entityliving, doesArrowBelongToPlayer, arrowType);
     }
 
     protected void inGroundAction() {
+        super.inGroundAction();
         EntityChicken chicken = new EntityChicken(worldObj);
-        this.worldObj.playSoundAtEntity(this, "random.drr", 1.0F, 1.2F / (this.rand.nextFloat() * 0.2F + 0.9F));
-        this.inGround = true;
 
         if (!worldObj.isMultiplayerAndNotHost) {
             double d1 = this.rand.nextGaussian() * 0.02D;
@@ -26,9 +24,5 @@ public class EntityArrowEgg extends EntityArrow {
             chicken.setPosition(posX, posY, posZ);
             worldObj.entityJoinedWorld(chicken);
         }
-    }
-
-    public void setHoming(boolean homing) {
-        this.homing = homing;
     }
 }

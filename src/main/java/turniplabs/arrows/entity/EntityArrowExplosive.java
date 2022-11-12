@@ -5,7 +5,6 @@ import net.minecraft.src.EntityLiving;
 import net.minecraft.src.World;
 
 public class EntityArrowExplosive extends EntityArrow {
-    public boolean homing;
 
     public EntityArrowExplosive(World world, EntityLiving entityliving, boolean doesArrowBelongToPlayer, int arrowType) {
         super(world, entityliving, doesArrowBelongToPlayer, arrowType);
@@ -13,13 +12,8 @@ public class EntityArrowExplosive extends EntityArrow {
 
     @Override
     protected void inGroundAction() {
-        this.worldObj.playSoundAtEntity(this, "random.drr", 1.0F, 1.2F / (this.rand.nextFloat() * 0.2F + 0.9F));
-        this.inGround = true;
+        super.inGroundAction();
         kill();
-        worldObj.createExplosion(this, posX, posY, posZ, 3.0f);
-    }
-
-    public void setHoming(boolean homing) {
-        this.homing = homing;
+        worldObj.createExplosion(this, posX, posY, posZ, 2.0f);
     }
 }

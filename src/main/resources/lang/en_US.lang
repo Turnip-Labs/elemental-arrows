@@ -1454,5 +1454,5 @@ item.arrows.ammo.ice.name=Ice Arrow
 item.arrows.ammo.ice.desc=A snow tipped arrow that freezes water. Brr!
 item.arrows.ammo.lightning.name=Lightning Arrow
 item.arrows.ammo.lightning.desc=A diamond tipped arrow that casts lightning from the sky.
-item.arrows.bow.homing.name=Homing Bow
-item.arrows.bow.homing.desc=An upgraded weapon for shooting seeking arrows.
+item.arrows.bow.homing.name=Diamond Bow
+item.arrows.bow.homing.desc=An upgraded weapon for shooting even more arrows.
